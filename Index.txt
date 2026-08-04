@@ -6,3 +6,20 @@ Session-28/07/26
 Session-30/07/26
 Session-16/07/26
 Session-16/07/26
+
+# 1. Download official Swift 6.0 toolchain tarball
+curl -O https://download.swift.org/swift-6.0-release/ubuntu2404/swift-6.0-RELEASE/swift-6.0-RELEASE-ubuntu24.04.tar.gz
+
+# 2. Extract it to /usr/share/swift
+sudo mkdir -p /usr/share/swift
+sudo tar -xzf swift-6.0-RELEASE-ubuntu24.04.tar.gz -C /usr/share/swift --strip-components=1
+
+# 3. Clean up the downloaded archive
+rm swift-6.0-RELEASE-ubuntu24.04.tar.gz
+
+# 4. Link Swift so your terminal recognizes the swift command everywhere:
+echo 'export PATH=/usr/share/swift/usr/bin:"$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+# 5. Verify that Swift is installed:
+swift --version
