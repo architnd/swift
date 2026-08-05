@@ -23,3 +23,7 @@ source ~/.bashrc
 
 # 5. Verify that Swift is installed:
 swift --version
+
+ Check Path with which swift
+/usr/share/swift/usr/bin/swift
+Add it to toolchain
