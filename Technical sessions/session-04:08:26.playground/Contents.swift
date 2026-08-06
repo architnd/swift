@@ -1,3 +1,4 @@
+import Foundation
 //Computed Properties(next 3 blocks)
 #if false
 // Bad way to write
@@ -108,7 +109,7 @@ struct Size {
 }
 var someSize = Size(width: 250, height: 1000)
 var anotherSize = someSize // separate copy is not created here // Deep Copy
-someSize.width = 500 // Separate instance is created here
+someSize.width = 500 // Separate instance is created here // Need to check
 print(someSize.width)
 print(anotherSize.width)
 #endif
@@ -280,6 +281,7 @@ class Student: Person {
 
 #endif
 
+#if false
 //Assignment
 class Event {
     var eventName: String
@@ -401,4 +403,4 @@ summerRockFest.isSoldout()
 print()
 summerRockFest.displayInfo()
 print()
-
+#endif

@@ -1,4 +1,3 @@
-import UIKit
 #if false
 //Strings
 let greeting = "Hello!"
@@ -136,6 +135,7 @@ default:
 
 #endif
 
+#if false
 //Unicode Supported
 let fish = "🐟"
 let credentials = "résumé"
@@ -144,3 +144,4 @@ print(fish)
 print(credentials)
 print(myName)
 print("∞".count)
+#endif

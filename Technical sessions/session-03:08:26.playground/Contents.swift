@@ -61,7 +61,7 @@ print(string1)
 let string2 = "" // empty string way 2
 let string3 = String("Hello") // memberwise initializer
 //Preferred way - directly assigns value, instead of an extra call in above example
-//RPC - Remote Procedure Call count is less
+//RPC - Remote Procedure Call - not related
 let string4 = "Hello"
 
 let integer1 = Int() // default value is 0, same as - let integer1 = 0
@@ -73,7 +73,7 @@ print(boolean)
 struct Odometer {
     var count: Int
 }
-//var odometer = Odometer() // Des not assume default value 0 here
+//var odometer = Odometer() // Does not assume default value 0 here
 // memberwise initializer
 var odometer = Odometer(count: 100)
 print(odometer.count)
@@ -88,7 +88,7 @@ let transferredAccount = BankAccount(accountNumber: 123)
 #endif
 
 
-#if false
+#if true
 // Custom Initializer
 struct Temperature {
     var celsius: Double
@@ -99,7 +99,10 @@ let celsiusValue = (fahrenhiteValue - 32) / 1.8
 let newTemperatue = Temperature(celsius: celsiusValue)
 
 struct Temperature1 {
-    var celsius: Double
+    var celsius: Double = 0
+    init(){
+        print("Hello")
+    }
     init(celsius: Double){
         self.celsius = celsius
     }
@@ -107,10 +110,12 @@ struct Temperature1 {
         celsius = (fahrenheit - 32) / 1.8
     }
 }
-let currentTemperature = Temperature1(celsius: 100)
-let boiling = Temperature1(fahrenheit: 212.0)
-print(currentTemperature.celsius)
-print(boiling.celsius)
+let temp = Temperature1()
+print(temp.celsius)
+//let currentTemperature = Temperature1(celsius: 100)
+//let boiling = Temperature1(fahrenheit: 212.0)
+//print(currentTemperature.celsius)
+//print(boiling.celsius)
 #endif
 
 #if true
