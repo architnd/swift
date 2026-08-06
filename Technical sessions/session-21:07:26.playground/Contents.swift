@@ -1,5 +1,3 @@
-import UIKit
-
 #if false
 var a = 10
 a=20

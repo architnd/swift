@@ -1,11 +1,123 @@
-Index:
-Session-16/07/26
-Session-21/07/26
-Session-22/07/26
-Session-28/07/26
-Session-30/07/26
-Session-16/07/26
-Session-16/07/26
+SWIFT PLAYGROUND INDEX: COMPLETE SERIES
+
+=======================================================
+SESSION: 16/07/26
+TOPICS COVERED:
+Swift Basics & Foundations
+
+KEY CONCEPTS:
+-Variables (var) vs. Constants (let)
+-Type Annotation, Type Inference, and Type Safety
+-Explicit vs. Implicit Type Casting
+-class (Reference Type) vs. struct (Value Type) mutability differences
+-Formatting large numbers using underscores (e.g., 1_000_000)
+
+=======================================================
+SESSION: 21/07/26
+TOPICS COVERED:
+Operators, Optionals, and Type Conversion
+
+KEY CONCEPTS:
+-Basic arithmetic and compound assignment operators (+=, -=)
+-Operator precedence and grouping with parentheses
+-Type Initializers (e.g., Int(y) creates a new struct instance rather than just type-casting)
+-Optionals and Nil Coalescing (??) to handle failable conversions safely
+-Forced Unwrapping (!) and the risks of runtime crashes if the value is nil
+-Using #if false and #endif compiler directives to disable code blocks
+
+=======================================================
+SESSION: 22/07/26
+TOPICS COVERED:
+Control Flow, Comparison, and Switch Statements
+
+KEY CONCEPTS:
+-Value equality () vs. Identity/Memory equality (=) for distinguishing class objects in memory
+-Logical operators (>, <, !, &&, ||) and if-else conditionals
+-Ternary operator (? :) for concise inline conditionals
+-Advanced switch statements: implicit break (default behavior), explicit fallthrough, and combining multiple cases
+-Switching on ranges using closed range operators (...) and boundaries like Int.min/Int.max
+-Exhaustive switch statements using enum (omitting the default case safely)
+
+=======================================================
+SESSION: 28/07/26
+TOPICS COVERED:
+Strings, Characters, and String Operations
+
+KEY CONCEPTS:
+-Strings as Structs (Value Types) and Character type differentiation
+-Multiline strings using triple quotes (""")
+-Escape sequences (\n for newline, \r for carriage return, \t, ", \)
+-String properties (.isEmpty, .count) vs. methods (.lowercased(), .uppercased())
+-Concatenation (+, +=) and String Interpolation ((...), including evaluating math inside the parentheses)
+-Substring searches and comparisons (.hasPrefix(), .hasSuffix(), .contains())
+-Unicode support (native support for emojis, accents, and international characters)
+
+=======================================================
+SESSION: 30/07/26
+TOPICS COVERED:
+Functions and Parameters
+
+KEY CONCEPTS:
+-Defining and calling standard functions (func)
+-Passing single and multiple parameters
+-Returning values using the -> Type syntax
+-Custom external argument labels (e.g., to) and omitting external labels using the underscore (_)
+-Setting default parameter values (e.g., num2: Int = 0)
+
+=======================================================
+SESSION: 03/08/26
+TOPICS COVERED:
+Structures (Structs), Initializers, and Methods
+
+KEY CONCEPTS:
+-Class initialization (requires explicit init) vs. Struct initialization (automatic memberwise initializers)
+-Default initializers (e.g., String(), Int(), Bool()) and setting default property values
+-Creating custom initializers to handle multiple input formats (e.g., calculating Celsius from Fahrenheit upon initialization)
+-Defining instance methods inside structs
+-Using the mutating keyword for methods that modify a struct's properties
+-Constants constraint: mutating methods cannot be called on let struct instances
+
+=======================================================
+SESSION: 04/08/26
+TOPICS COVERED:
+-Advanced Properties, Class Mechanics, and Inheritance
+
+KEY CONCEPTS:
+-Computed Properties (calculated on the fly, must be var) vs. Stored Properties
+-Property Observers (willSet utilizing newValue, didSet utilizing oldValue)
+-Type Properties and Methods (static keyword) that belong to the structural type itself, not individual instances
+-Memory management: Deep copying (Structs) vs. Shallow/Reference copying (Classes, where multiple variables point to the same memory)
+-The self keyword for distinguishing instance properties from local variables/parameters
+-Class inheritance basics (subclassing using : Superclass)
+-Overriding parent methods/properties (override) and accessing superclass implementations (super)
+-Initializer delegation in subclasses (initializing subclass properties before calling super.init())
+-Assignment: Building a multi-level class hierarchy for Event Management (Event base class -> Satsang/Concert subclasses -> MeditationSession/RockConcert)
+
+=======================================================
+SESSION: 05/08/26
+TOPICS COVERED:
+Collections (Arrays & Dictionaries) and Loops
+
+KEY CONCEPTS:
+-Arrays: Homogeneous arrays, heterogeneous arrays using Any, and nested (2D) arrays
+-Array Methods: .append(), .insert(at:), .remove(at:), .removeLast(), .removeAll()
+-Array Searching: .contains(), .contains(where:) utilizing closure shorthand arguments ($0) and force casting (as!)
+-Dictionaries: Key-value pairs ([String: Int]), returning nil for missing keys, and unordered iteration
+-Dictionary Methods: .updateValue(forKey:), .removeValue(forKey:), .keys, .values, and providing default values (default: 0)
+-Optional Binding: Using if let to safely unwrap dictionary lookups or operations that might return nil
+-For Loops: Iterating over collections using closed (...) and half-open (..<) ranges, ignoring indices with _
+-Enumeration: Using .enumerated() to access index and element simultaneously as a tuple
+-While & Control Transfer: while loops, repeat-while loops, break (exit loop), and continue (skip current iteration)
+
+
+
+
+
+
+
+
+=======================================================
+
 
 # 1. Download official Swift 6.0 toolchain tarball
 curl -O https://download.swift.org/swift-6.0-release/ubuntu2404/swift-6.0-RELEASE/swift-6.0-RELEASE-ubuntu24.04.tar.gz
