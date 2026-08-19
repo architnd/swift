@@ -109,7 +109,19 @@ KEY CONCEPTS:
 -Enumeration: Using .enumerated() to access index and element simultaneously as a tuple
 -While & Control Transfer: while loops, repeat-while loops, break (exit loop), and continue (skip current iteration)
 
+=======================================================
+SESSION: 18/08/26
+TOPICS COVERED:
+Optionals Deep Dive, Failable Initializers, and Optional Chaining
 
+KEY CONCEPTS:
+-Declaring Optionals: Using the question mark (?) to allow a property or variable to hold either a value or nil
+-Contextual Types for nil: Variables cannot be implicitly assigned nil without an explicit optional type annotation (e.g., var code: Int? = nil)
+-Forced Unwrapping (!): Extracting an optional's underlying value, which causes a runtime crash if the value is actually nil
+-Optional Binding (if let): Safely checking and unwrapping an optional into a temporary constant without crashing
+-Optional Function Parameters & Return Types: Using Optionals in function signatures to allow missing inputs or outputs (e.g., -> String?)
+-Failable Initializers (init?): Creating an initializer that can return nil if certain logical conditions are not met during instantiation
+-Optional Chaining (?.): Safely accessing nested optional properties in a single line (e.g., person.residence?.address?.apartmentNumber) to avoid deep, nested if-let statements
 
 
 
