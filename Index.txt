@@ -123,7 +123,30 @@ KEY CONCEPTS:
 -Failable Initializers (init?): Creating an initializer that can return nil if certain logical conditions are not met during instantiation
 -Optional Chaining (?.): Safely accessing nested optional properties in a single line (e.g., person.residence?.address?.apartmentNumber) to avoid deep, nested if-let statements
 
+=======================================================
+SESSION: 31/08/26
+TOPICS COVERED:
+Control Flow, Early Exits, and Guard Statements
 
+KEY CONCEPTS:
+The guard statement: Used to ensure a condition is met before continuing execution, prioritizing readability
+Avoiding the "Pyramid of Doom": Preventing deeply nested if-else blocks when validating multiple conditions
+Early Exits: A guard statement must always include an else block that exits the current scope (e.g., using return)
+Optional Binding with guard let: Safely unwrapping one or multiple optionals concurrently
+Scope Availability: Constants unwrapped via guard let remain accessible in the remaining function scope
+
+=======================================================
+SESSION: 01/09/26
+TOPICS COVERED:
+Closures, Higher-Order Functions, and Protocols
+
+KEY CONCEPTS:
+Closures: Self-contained blocks of functionality (unnamed functions) that can be passed as parameters or returned
+Syntactic Sugar: Using shorthand argument names ($0, $1) and implicit returns to write concise closures
+Collection Functions: Using .map (transforming data), .filter (extracting data based on a condition), and .reduce (combining data)
+Protocols: Defining a blueprint of methods/properties (similar to interfaces in Java)
+Adoption vs. Conformance: Adopting a protocol and implementing its required methods
+Predefined Protocols: CustomStringConvertible (for printing), Equatable (for == comparison), and Comparable (for sorting)
 
 
 
